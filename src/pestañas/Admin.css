@@ -1,0 +1,125 @@
+.containerAdmin{
+    background-color: rgb(4, 10, 41);
+    padding: 0.4rem;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.25fr 0.75fr;
+    grid-template-rows: 0.1fr 0.9fr;
+    grid-template-areas: "barraInfo barraInfo" "opcionesAdmin eventos";
+    grid-gap: 0.2rem;
+}
+
+.barraInfo{
+    background-color: green;
+    grid-area: barraInfo;
+}
+
+.opcionesAdmin{
+    background-color: blue;
+    grid-area: opcionesAdmin;
+}
+
+.eventos{
+    background-color: grey;
+    grid-area: eventos;
+}
+
+.labelTitulo{
+    color: white;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+.labelName{
+    color: white;
+    position: absolute;
+    left: 80%;
+    top: 3%;
+    width: 10%;
+}
+
+.buttonNuevoEvento{
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    width: 15%;
+    height: 50px;
+}
+
+.buttonEditarEvento{
+    position: absolute;
+    left: 5%;
+    top: 45%;
+    width: 15%;
+    height: 50px;
+}
+
+.buttonEliminarEvento{
+    position: absolute;
+    left: 5%;
+    top: 65%;
+    width: 15%;
+    height: 50px;
+}
+
+
+@media only screen and (max-width: 550px){
+    .containerAdmin{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "barraInfo" "opcionesAdmin" "eventos";
+    }
+
+    .barraInfo{
+        background-color: green;
+        grid-area: barraInfo;
+    }
+    .opcionesAdmin{
+        background-color: blue;
+        grid-area: opcionesAdmin;
+    }
+    
+    .eventos{
+        background-color: grey;
+        grid-area: eventos;
+    }
+
+    .labelTitulo{
+        color: white;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+    }
+    .labelName{
+        color: white;
+        position: absolute;
+        left: 5%;
+        top: 15%;
+        width: 10%;
+    }
+
+    .buttonNuevoEvento{
+        position: absolute;
+        left: 25%;
+        top: 39%;
+        width: 50%;
+        height: 5%;
+    }
+    
+    .buttonEditarEvento{
+        position: absolute;
+        left: 25%;
+        top: 49%;
+        width: 50%;
+        height: 5%;
+    }
+    
+    .buttonEliminarEvento{
+        position: absolute;
+        left: 25%;
+        top: 59%;
+        width: 50%;
+        height: 5%;
+    }
+    
+}
