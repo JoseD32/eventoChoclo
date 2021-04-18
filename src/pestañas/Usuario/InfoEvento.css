@@ -1,0 +1,39 @@
+.containerInfoEvento{
+    background-color: rgb(4, 10, 41);
+    padding: 0.4rem;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr;
+    grid-template-areas: "barraInfoEvento" "caracteristicasInfoEvento";
+    grid-gap: 0.2rem;
+}
+
+.barraInfoEvento{
+    background-color: green;
+    grid-area: barraInfoEvento;
+}
+
+.caracteristicasInfoEvento{
+    background-color: blue;
+    grid-area: caracteristicasInfoEvento;
+}
+
+.imagenCabecera{
+    display: inline-block;
+    margin: 20px;
+    width: 70vh;
+    height: 70vh;
+    background-color: chartreuse;
+}
+.imagenAsientos{
+    display: inline-block;
+    margin: 20px;
+    width: 110vh;
+    height: 70vh;
+    background-color: chartreuse;
+}
+
+.fieldInfoEvento{
+    padding-right: 50;
+}
