@@ -20,9 +20,12 @@
 }
 
 .eventos{
-    background-color: grey;
+    padding-top: 10vh;
+    padding-left: 10vh;
+    background-color: white;
     grid-area: eventos;
 }
+
 
 .labelTitulo{
     color: white;
@@ -62,6 +65,14 @@
     height: 50px;
 }
 
+.divImagenAdmin{
+    display: inline-block;
+    margin: 20px;
+    width: 50vh;
+    height: 50vh;
+    background-color: black;
+}
+
 
 @media only screen and (max-width: 550px){
     .containerAdmin{
@@ -80,7 +91,7 @@
     }
     
     .eventos{
-        background-color: grey;
+        background-color: white;
         grid-area: eventos;
     }
 

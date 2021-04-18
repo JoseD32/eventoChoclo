@@ -15,7 +15,7 @@
 }
 
 .caracteristicasSeleccionarEvento{
-    background-color: blue;
+    background-color: white;
     display: inline-block;
     padding-top: 5vh;
     padding-left: 10vh;
@@ -27,5 +27,5 @@
     margin: 20px;
     width: 50vh;
     height: 50vh;
-    background-color: chartreuse;
+    background-color: black;
 }

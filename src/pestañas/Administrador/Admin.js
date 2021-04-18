@@ -24,16 +24,20 @@ class Admin extends React.Component{
                 <label className="labelName"> {this.props.cargo} {this.props.name} </label>
                 </div>
                 <div className="opcionesAdmin">
-
-                    <li><Link to={"/EditarEvento"}>Editar Evento</Link></li>
-                    <button className="buttonNuevoEvento" id="btnNuevoEvento"> NUEVO</button>
-                    <button className="buttonEditarEvento" id="btnEditarEvento"> EDITAR
-                    </button>
-                    <button className="buttonEliminarEvento" id="btnEliminarEvento"> ELIMINAR
-                    </button>
+                    <Link to="/EditarEvento">
+                        <button className="buttonNuevoEvento" id="btnNuevoEvento"> NUEVO</button>
+                    </Link>
+                    <Link to="EditarEvento">
+                        <button className="buttonEditarEvento" id="btnEditarEvento"> EDITAR</button>
+                    </Link>
+                    <Link to="SeleccionarEvento">
+                        <button className="buttonEliminarEvento" id="btnEliminarEvento"> ELIMINAR</button>
+                    </Link>
                 </div>
                 <div className="eventos">
-                    Eventos
+                        <input type="text"></input><br></br><br></br>
+                        <div className="divImagenAdmin"></div>
+                        <div className="divImagenAdmin"></div>
                 </div>
             </div>
 

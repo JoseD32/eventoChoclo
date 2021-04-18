@@ -12,9 +12,36 @@ import InfoEvento from './pestañas/Usuario/InfoEvento';
 
 function App() {
   return (
-      <div className="app">
-        <InfoEvento tittle="Eventos Choclo" name="Juan1" cargo="Administrador"/>
+    <Router>
+      <div className="container">
+        <Switch>
+          <Route path="/" exact>
+            <Inicio tittle="Eventos Choclo" name="Juan1" cargo="Administrador"/>
+          </Route>
+          <Route path="/Admin">
+            <Admin tittle="Eventos Choclo" name="Juan1" cargo="Administrador"/>
+          </Route>
+          <Route path="/EditarEvento">
+            <EditarEvento tittle="Eventos Choclo" name="Juan1" cargo="Administrador"/>
+          </Route>
+          <Route path="/InfoEventoGrafico">
+            <InfoEventoGrafico tittle="Eventos Choclo" name="Juan1" cargo="Administrador"/>
+          </Route>
+          <Route path="/SeleccionarEvento">
+            <SeleccionarEvento tittle="Eventos Choclo" name="Juan1" cargo="Administrador"/>
+          </Route>
+          <Route path="/Usuario">
+            <Usuario tittle="Eventos Choclo" name="Juan1" cargo="Administrador"/>
+          </Route>
+          <Route path="/NuevoUsuario">
+            <NuevoUsuario tittle="Eventos Choclo" name="Juan1" cargo="Administrador"/>
+          </Route>
+          <Route path="/InfoEvento">
+            <InfoEvento tittle="Eventos Choclo" name="Juan1" cargo="Administrador"/>
+          </Route>
+        </Switch>
       </div>
+    </Router>
   );
 }
 
