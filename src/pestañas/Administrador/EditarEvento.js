@@ -1,14 +1,63 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './EditarEvento.css'
 
 function EditarEvento(props){
     return(
         <div className="containerEditarEvento">
             <div className="barraInfoEditar">
-                
+            <label className="labelTitulo"> </label>
+                <label className="labelName"></label>
+                <Link to="/">
+                        <button className="buttonSalir" id="btnSalir"> SALIR</button>
+                </Link>
             </div>
             <div className="CaracteristicasEvento">
-                <h1>Lista de caracteristicas Otra lista de caracteristicas Otra lista de caracteristicas</h1>
+                <br></br>
+            <fieldset class="fieldEditar">
+                    <legend class="legendEditar">Nombre Evento</legend>
+                <p>
+                    <label class="labelEditar">Nombre : </label>
+                    <input type="text"/>
+                </p>
+
+                <p>
+                    <label class="labelEditar">Descripcion : </label>
+                    <input type="text" />
+                </p>
+
+                <p>
+                    <label class="labelEditar">Estado (pendiente, en progreso, finalizado) : </label>
+                    <input type="text" />
+                </p>
+
+                <p>
+                    <label class="labelEditar">disponibilidad(cantidad entradas) : </label>
+                    <input type="text" />
+                </p>
+
+                <p>
+                    <label class="labelEditar">Direccion : </label>
+                    <input type="text" />
+                </p>
+
+                <p>
+                    <label class="labelEditar">TEl contacto : </label>
+                    <input type="text" />
+                </p>
+
+                <p>
+                    <label class="labelEditar">Correo contacto : </label>
+                    <input type="text" />
+                </p>
+                <br></br>
+                <p>
+                    <Link to="/Admin">
+                        <button id="btnRegistrarse"> Aceptar</button> 
+                    </Link>
+                </p>
+                </fieldset>
             </div>
         </div>
 

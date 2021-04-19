@@ -10,6 +10,7 @@
 }
 
 .barraInfo{
+    min-height: 10vh;
     background-color: green;
     grid-area: barraInfo;
 }
@@ -36,9 +37,17 @@
 .labelName{
     color: white;
     position: absolute;
-    left: 80%;
+    left: 70%;
     top: 3%;
     width: 10%;
+}
+
+.buttonSalir{
+    position: absolute;
+    left: 80%;
+    top: 3%;
+    width: 5%;
+    height: 15px;
 }
 
 .buttonNuevoEvento{
@@ -64,6 +73,7 @@
     width: 15%;
     height: 50px;
 }
+
 
 .divImagenAdmin{
     display: inline-block;
@@ -106,6 +116,13 @@
         position: absolute;
         left: 5%;
         top: 15%;
+        width: 10%;
+    }
+
+    .buttonSalir{
+        position: absolute;
+        left: 5%;
+        top: 25%;
         width: 10%;
     }
 

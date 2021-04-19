@@ -1,5 +1,6 @@
 import React from 'react';
-import './NuevoUsuario.css'
+import './NuevoUsuario.css';
+import {Link} from 'react-router-dom';
 
 function NuevoUsuario(props){
     return(
@@ -44,8 +45,9 @@ function NuevoUsuario(props){
                 </p>
                 <br></br>
                 <p>
-                    <button id="btnRegistrarse"> Registrarse
-                    </button> 
+                    <Link to="/">
+                        <button id="btnRegistrarse"> Registrarse</button> 
+                    </Link>
                 </p>
                 </fieldset>
 

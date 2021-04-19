@@ -22,6 +22,9 @@ class Admin extends React.Component{
                 <div className="barraInfo">
                 <label className="labelTitulo"> {this.props.tittle} </label>
                 <label className="labelName"> {this.props.cargo} {this.props.name} </label>
+                <Link to="/">
+                        <button className="buttonSalir" id="btnSalir"> SALIR</button>
+                </Link>
                 </div>
                 <div className="opcionesAdmin">
                     <Link to="/EditarEvento">

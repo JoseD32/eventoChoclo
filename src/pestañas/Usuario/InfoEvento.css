@@ -10,12 +10,13 @@
 }
 
 .barraInfoEvento{
+    min-height: 10vh;
     background-color: green;
     grid-area: barraInfoEvento;
 }
 
 .caracteristicasInfoEvento{
-    background-color: blue;
+    background-color: white;
     grid-area: caracteristicasInfoEvento;
 }
 
@@ -24,16 +25,20 @@
     margin: 20px;
     width: 70vh;
     height: 70vh;
-    background-color: chartreuse;
+    background-color: black;
 }
 .imagenAsientos{
     display: inline-block;
     margin: 20px;
     width: 110vh;
     height: 70vh;
-    background-color: chartreuse;
+    background-color: gray;
 }
 
 .fieldInfoEvento{
     padding-right: 50;
+}
+
+.labelInfo{
+    color: black;
 }

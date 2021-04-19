@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Inicio.css'
 
 
@@ -9,10 +10,12 @@ function Inicio(props){
                 <label className="label1" id="label1"> INGRESE SUS DATOS</label>
                 <input type="text" className="texto1" id="txt1" />
                 <input type="text" className="texto2" id="txt2"/>
-                <button className="button1" id="btn1"> INGRESAR
-                </button> 
-                <button className="button2" id="btn1"> REGISTRARSE
-                </button> 
+                <Link to="/Admin">
+                    <button className="button1" id="btn1"> INGRESAR</button> 
+                </Link>
+                <Link to="NuevoUsuario">
+                    <button className="button2" id="btn1"> REGISTRARSE</button> 
+                </Link>
             </div>
             <div className="fondo">
             </div>

@@ -10,6 +10,7 @@
 }
 
 .barraUsuario{
+    min-height: 10vh;
     background-color: green;
     grid-area: barraUsuario;
 }
@@ -18,7 +19,7 @@
     display: inline-block;
     padding-top: 5vh;
     padding-left: 10vh;
-    background-color: blue;
+    background-color: white;
     grid-area: caracteristicasUsuario;
 }
 
@@ -27,5 +28,5 @@
     margin: 20px;
     width: 50vh;
     height: 50vh;
-    background-color: chartreuse;
+    background-color: black;
 }
