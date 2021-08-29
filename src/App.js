@@ -1,3 +1,4 @@
+//27-08-2021 
 import './App.css';
 import Inicio from './pestañas/Inicio'
 import Admin from './pestañas/Administrador/Admin'
@@ -19,7 +20,7 @@ function App() {
             <Inicio tittle="Eventos Choclo" name="Juan1" cargo="Administrador"/>
           </Route>
           <Route path="/Admin">
-            <Admin tittle="Eventos Choclo" name="Juan1" cargo="Administrador"/>
+            <Admin tittle="Eventos  Choclo" name="Juan1" cargo="Administrador"/>
           </Route>
           <Route path="/EditarEvento">
             <EditarEvento tittle="Eventos Choclo" name="Juan1" cargo="Administrador"/>

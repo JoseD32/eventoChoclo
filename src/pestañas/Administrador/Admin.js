@@ -2,26 +2,30 @@ import React from 'react';
 import './Admin.css'
 import EditarEvento from './EditarEvento';
 import { Link } from 'react-router-dom';
+import {makeStyles} from '@material-ui/core/styles';
+import { AppBar, IconButton, Toolbar } from '@material-ui/core'
 
-
-class Admin extends React.Component{
-
-    constructor(props){
-        super(props);
-
+const useStyles = makeStyles((theme) => ({
+    appbar:{
+        backgroundColor: 'green'
+    },
+    fondoPresentacion: {
+        minHeight: '100vh',
+        backgroundImage: `url(${process.env.PUBLIC_URL + '/imagenes/volley.jpg'})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'
     }
+}));
 
-    aEditarEvento() {
-        this.props.history.push({to: 'EditarEvento'});
-
-    }
-
-    render(){
+function Admin(props){
+    const classes = useStyles();
         return(
                 <div className="containerAdmin">
+                    <AppBar>
+                    </AppBar>
                 <div className="barraInfo">
-                <label className="labelTitulo"> {this.props.tittle} </label>
-                <label className="labelName"> {this.props.cargo} {this.props.name} </label>
+                <label className="labelTitulo"> </label>
+                <label className="labelName">   </label>
                 <Link to="/">
                         <button className="buttonSalir" id="btnSalir"> SALIR</button>
                 </Link>
@@ -46,7 +50,6 @@ class Admin extends React.Component{
 
     
             );
-    }
 }
 
 
